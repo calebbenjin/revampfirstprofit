@@ -8,8 +8,8 @@
 }
 
 :root {
-  --primaryColor: #d11515;
-  --secondaryColor: #00263F;
+  --primaryColor: #c03939;
+  --secondaryColor: #03395d;
   --greyColor:  #f8f8f8;
   --whiteColor: #fdfdfdee;
   --transition:  all 0.5s ease;
@@ -150,6 +150,8 @@ section {
   font-size: 1.2rem;
   margin: 1rem 0;
   white-space: nowrap;
+  font-family: var(--bold-font);
+  font-weight: 900;
 }
 .core-btn-lg:hover {
   background: #a50404;
@@ -216,7 +218,7 @@ section {
 .service__section .section__title {
   text-align: center;
   font-weight: var(--bold-font);
-  
+  font-size: 4rem;
 }
 
 .section__title-body {
@@ -436,9 +438,9 @@ section {
    }
 
    .showcase .showcase__content {
-    width: 80%;
+    width: 70%;
     color: #fbfbfb;
-    text-align: center;
+    text-align: left;
    }
    
    .showcase__content .showcase__title {
@@ -526,7 +528,7 @@ section {
      position: relative;
    }
    .about__section .about__img .main__img {
-     border-radius: 6px;
+     border-radius: 55px;
      /* box-shadow: var(--light-shadow); */
    }
    .about__section .about__img .logo {
@@ -775,7 +777,7 @@ section {
     margin-top: 4rem;
     font-size: 2rem;
     color: var(--secondaryColor);
-    box-shadow: var(--light-shadow);
+    box-shadow: var(--dark-shadow);
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -783,14 +785,16 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    background: #ffb6b6;
+    /* background: #ffb6b6; */
+    border: solid 2px var(--secondaryColor);
   }
 
   .works__section .card .step {
     font-size: 3rem;
     font-weight: var(--bold-font);
     position: absolute;
-    top: -5rem;
+    top: 0rem;
+    right: 1rem;
     color: var(--secondaryColor);
     box-shadow: var(--dark-shadow);
     background: #fff;
@@ -823,6 +827,8 @@ section {
      position: relative; */
   }
 
+
+
   .plans {
     margin-top: 5rem;
   }
@@ -830,39 +836,53 @@ section {
   .plans__section .plans__card {
     box-shadow: var(--dark-shadow);
     text-align: center;
-    background: #fff;
+    background: var(--secondaryColor);
     border-top-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
     padding: 3rem 20px;
-    color: var(--secondaryColor);
+    color: #fff;
     margin-bottom: 1rem;
     transition: var(--transition);
   }
 
   .plans__card:hover {
-    background:rgba(226, 89, 89, 0.137);
+    background: #054672;
   }
 
   .plans__card .title {
     font-weight: var(--bold-font);
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+  .plans__card .title small {
+    font-size: 1rem;
+    font-weight: var(--bold-font);
   }
   .plans__card .plan {
     font-weight: var(--bold-font);
-    color: var(--primaryColor);
+    color: #fff;
     /* box-shadow: var(--dark-shadow); */
-    padding: 10px;
+    /* padding: 10px; */
     width: 70%;
     margin: auto;
     border-radius: 6px;
+    text-transform: uppercase;
   }
 
+ 
+
   .plan_icon {
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-top: -1.3rem;
+    color: #fff;
   }
 
   .plans__card .monthly {
     margin: 2rem 0;
+    background: rgba(5, 69, 112, 0.911);
+    box-shadow: var(--dark-shadow);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 900;
   }
   .plans__card h5 {
     margin-bottom: 2rem;
@@ -1005,6 +1025,48 @@ section {
     color: #ccc;
   }
 
+  .ready__section {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    font-family: var(--bold-font);
+    color: #fff;
+  }
+
+  .ready__section h2 {
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  .ready__section .content_box-one {
+    width: 70%;
+    padding: 2rem;
+    background-image: linear-gradient(to left,rgba(0, 38, 63, 0), #00263f), url(../img/aboutimg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ready__section .content_box-two {
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondaryColor);
+    text-align: center;
+  } 
+
+  .ready__section .content_box-one h1 {
+    font-weight: 900;
+    font-family: var(--bold-font);
+    font-size: 2.5rem;
+  }
+  .ready__section .content_box-two h2 {
+    margin-bottom: 2rem;
+  }
+
   .ready__card {
     background: var(--secondaryColor);
     padding: 40px;
@@ -1030,6 +1092,24 @@ section {
   }
 
   @media(max-width: 768px) {
+    .ready__section {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-family: var(--bold-font);
+      color: #fff;
+      text-align: center;
+    }
+    .ready__section .content_box-one {
+      width: 100%;
+    }
+    .ready__section .content_box-two {
+      width: 100%;
+      padding: 6rem 1rem;
+    }
+    .ready__section .content_box-one h1 {
+      font-size: 1.7rem;
+    }
     .ready__card h1 {
       font-size: 2rem;
     }
