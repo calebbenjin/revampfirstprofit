@@ -237,7 +237,7 @@
           </div>
           <div class="steps">
             <div class="row">
-              <div class="col-lg-4 col-md-4 mx-auto">
+              <div class="col-lg-4 col-md-4 col-10 mx-auto">
                 <div class="first__step card">
                   <h1 class="step"><small>Step</small>1</h1>
                   <div class="container">
@@ -252,7 +252,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 mx-auto">
+              <div class="col-lg-4 col-md-4 col-10 mx-auto">
                 <div class="second__step card">
                   <h1 class="step"><small>Step</small>2</h1>
                   <div class="container">
@@ -267,7 +267,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 mx-auto">
+              <div class="col-lg-4 col-md-4 col-10 mx-auto">
                 <div class="third__step card">
                   <h1 class="step"><small>Step</small>3</h1>
 
@@ -281,10 +281,11 @@
                 </div>
               </div>
             </div>
+            <div class="footer-btn">
+              <a href="#" class="core-btn-lg">Get Started Now</a>
+            </div>
           </div>
-          <div class="footer-btn">
-            <a href="#" class="core-btn-lg">Get Started Now</a>
-          </div>
+          
         </div>
       </section>
 
@@ -301,6 +302,7 @@
             <div class="row">
               <div class="col-md-5 col-lg-5 mx-auto">
                 <div class="plans__card">
+                  <i class="fas fa-battery-three-quarters plan_icon"></i>
                   <h3 class="plan">Start Plan</h3>
                   <h1 class="title">10% / 15%</h1>
                   <h6 class="monthly">
@@ -313,6 +315,7 @@
               </div>
               <div class="col-md-5 col-lg-5 mx-auto">
                 <div class="plans__card">
+                  <i class="fas fa-battery-full plan_icon"></i>
                   <h3 class="plan">Start Gold</h3>
                   <h1 class="title">13% / 18%</h1>
                   <h6 class="monthly">
@@ -482,7 +485,7 @@
         </div>
       </section>
 
-      <footer class="contact__section">
+      <!-- <footer class="contact__section">
         <div class="container">
           <div class="contact__card">
             <div class="row">
@@ -556,7 +559,7 @@
             </ul>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </main>
 
     <script src="dist/js/modernizr-3.11.2.min.js"></script>
@@ -573,7 +576,7 @@
       ga('create', 'UA-XXXXX-Y', 'auto')
       ga('set', 'anonymizeIp', true)
       ga('set', 'transport', 'beacon')
-      ga('send', 'pageview')
+      ga('send', 'pageview');
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
     <!-- c3.js Charts Plugin -->
@@ -609,7 +612,7 @@
             loop: true,
           },
         },
-      })
+      });
     </script>
   </body>
 </html>

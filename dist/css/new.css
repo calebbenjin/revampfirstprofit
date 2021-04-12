@@ -589,7 +589,7 @@ section {
    }
 
    .footer-btn {
-     margin-top: 4rem;
+     margin-top: 5rem;
      text-align: center;
    }
 
@@ -704,7 +704,7 @@ section {
 
  
   .works__section {
-    background-image: linear-gradient(to left,rgba(0, 38, 63, 0.733), #00263F), url(../img/bg.jpg);
+    background-image: linear-gradient(to left,rgba(0, 38, 63, 0.356), #00263F), url(../img/servimg.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -718,14 +718,16 @@ section {
 
   .works__section .steps {
     margin-top: 2rem;
+    width: 70%;
+    margin: left;
   }
   .works__section .card {
-    background: #fff;
+    background: #f5f5f5;
     position: relative;
     box-shadow: var(--dark-shadow);
     border: none;
-    padding: 30px;
-    height: 90%;
+    padding: 20px;
+    height: 100%;
     border-radius: 6px;
   }
 
@@ -735,7 +737,30 @@ section {
 
   @media(max-width: 768px) {
     .works__section .section__title-body {
+      margin-bottom: 6rem;
+      width: 100%;
+    }
+
+    .works__section .card {
+      background: #f5f5f5;
+      position: relative;
+      box-shadow: var(--dark-shadow);
+      border: none;
+      padding: 20px;
+      height: 350px;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+    }
+
+    .works__section .steps {
       margin-top: 2rem;
+      width: 100%;
+      margin: auto;
+    }
+
+    .works__section .steps .core-btn-lg {
+      width: 100%;
+      padding: 8px;
     }
   }
 
@@ -762,15 +787,15 @@ section {
   }
 
   .works__section .card .step {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: var(--bold-font);
     position: absolute;
-    top: -6rem;
+    top: -5rem;
     color: var(--secondaryColor);
     box-shadow: var(--dark-shadow);
     background: #fff;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
   }
   .works__section .card .step small {
     font-size: 1.2rem;
@@ -792,7 +817,10 @@ section {
   }
 
   .plans__section {
-    background: #fff;
+    background: #ffff;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(118deg, rgba(2,0,36,1) 0%, rgba(212,18,18,0.8081278654039741) 0%, rgba(4,17,106,0.7717132995776436) 100%);
+     position: relative; */
   }
 
   .plans {
@@ -803,10 +831,16 @@ section {
     box-shadow: var(--dark-shadow);
     text-align: center;
     background: #fff;
-    border-radius: 6px;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
     padding: 3rem 20px;
     color: var(--secondaryColor);
     margin-bottom: 1rem;
+    transition: var(--transition);
+  }
+
+  .plans__card:hover {
+    background:rgba(226, 89, 89, 0.137);
   }
 
   .plans__card .title {
@@ -815,12 +849,16 @@ section {
   }
   .plans__card .plan {
     font-weight: var(--bold-font);
-    color: #f5b4b4;
-    box-shadow: var(--dark-shadow);
+    color: var(--primaryColor);
+    /* box-shadow: var(--dark-shadow); */
     padding: 10px;
     width: 70%;
     margin: auto;
     border-radius: 6px;
+  }
+
+  .plan_icon {
+    font-size: 4rem;
   }
 
   .plans__card .monthly {
@@ -883,6 +921,7 @@ section {
   @media(max-width: 900px) {
     .value__card {
       height: 100%;
+      margin-bottom: 2rem;
     }
   }
 
