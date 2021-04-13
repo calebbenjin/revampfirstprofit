@@ -301,7 +301,7 @@ section {
     transition: var(--transition);
     text-align: center;
     color: #fff;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-transform: uppercase;
    }
    header nav ul li a:hover {
@@ -438,7 +438,7 @@ section {
    }
 
    .showcase .showcase__content {
-    width: 70%;
+    width: 90%;
     color: #fbfbfb;
     text-align: left;
    }
@@ -516,6 +516,10 @@ section {
    }
    .about__section .content p {
     margin-bottom: 2rem;
+   }
+
+   .sub_title {
+     margin-bottom: 2rem;
    }
 
    .about__section .content {
@@ -709,6 +713,7 @@ section {
     background-image: linear-gradient(to left,rgba(0, 38, 63, 0.356), #00263F), url(../img/servimg.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 10rem;
   }
 
   .works__section .section__title-body .section__title {
@@ -930,10 +935,12 @@ section {
     box-shadow: var(--dark-shadow);
     border-radius: 6px;
     background: rgba(3, 61, 100, 0.685);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #fff;
     font-weight: 900;
     transition: var(--transition);
+    border-bottom: solid 8px #fff;
+    border-left: solid 8px #fff;
   }
   .value__card:hover {
     background: rgba(5, 69, 112, 0.911);
@@ -947,15 +954,15 @@ section {
 
   .values__section .value__card .title {
     font-weight: var(--bold-font);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ffb6b6;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 1rem 0;
   }
   .values__section .value__card .icon {
     margin: 2rem 0;
     font-size: 2rem;
-    color: var(--secondaryColor);
+    color: #fff;
     box-shadow: var(--light-shadow);
     width: 70px;
     height: 70px;
@@ -964,11 +971,12 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    background: #ffb6b6;
+    background: transparent;
+    border: solid 2px #fff;
   }
 
   .customer__section  {
-    background: #fff;
+    background: rgba(248, 248, 248, 0.445);
   }
 
   .comments__section .values {
@@ -982,7 +990,7 @@ section {
     background: #fff;
     margin-bottom: 1rem;
     color: var(--secondaryColor);
-    border-top: solid 4px var(--secondaryColor);
+    border-bottom: solid 8px var(--secondaryColor);
     margin-top:2rem;
     width: 90%;
   }
@@ -1009,6 +1017,8 @@ section {
     margin-right: 5px;
   }
 
+  
+
  
   .comment__card .state {
     line-height: 0.6;
@@ -1022,7 +1032,8 @@ section {
 
   .comment__card .comment i {
     font-size: 2rem;
-    color: #ccc;
+    color: var(--primaryColor);
+    margin-right: 10px;
   }
 
   .ready__section {
@@ -1041,7 +1052,7 @@ section {
   .ready__section .content_box-one {
     width: 70%;
     padding: 2rem;
-    background-image: linear-gradient(to left,rgba(0, 38, 63, 0), #00263f), url(../img/aboutimg.jpg);
+    background-image: linear-gradient(to left,rgba(0, 38, 63, 0.472), #00263f), url(../img/aboutimg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -1115,14 +1126,27 @@ section {
     }
   }
 
+  .contact__section {
+    background-image: linear-gradient(to top,rgb(0, 38, 63), #ffffff00), url(../img/footerimg1.jpg);
+    background-position: left;
+    background-size: cover;
+  }
+
   .contact__section .address .title {
     font-weight: var(--bold-font);
     margin-bottom: 2rem;
+    color: var(--primaryColor);
+  }
+
+  .contact__section .address {
+    margin-top: 3.5rem;
   }
   .contact__section .address ul li {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    font-weight: 900;
+    color: #fff;
   }
   .contact__section .address ul li img {
     width: 150px;
@@ -1130,8 +1154,9 @@ section {
   }
   .contact__section .address ul li i {
     margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: -1.5rem;
+    color: var(--primaryColor);
   }
   .contact__section .address ul li .numbers {
     line-height: 0.6;
@@ -1139,10 +1164,10 @@ section {
 
   .contact__form input, textarea, .contact__form button{
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin-bottom: 10px;
     border: none;
-    border: solid 1px #eee;
+    /* border: solid 1px var(--secondaryColor); */
     box-shadow: var(--light-shadow);
     transition: var(--transition);
     border-radius: 6px;
@@ -1158,8 +1183,16 @@ section {
     box-shadow: var(--dark-shadow);
     padding: 30px;
     border-radius: 6px;
+    color: #fff;
     font-weight: var(--light-font);
-    background: #fff;
+    background: rgba(5, 69, 112, 0.356);
+  }
+
+  .contact__form form input, textarea {
+    background: rgba(255, 255, 255, 0.479);
+  }
+  .contact__form form input:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.822);
   }
 
   form input::placeholder {
@@ -1187,22 +1220,24 @@ section {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 2rem 0;
   }
   .footer ul li {
     margin-bottom: 10px;
+    color: #fff;
   }
   .footer ul li a {
-    color: var(--secondaryColor);
+    color: #fff;
     text-decoration: none;
   }
   .footer ul li .firstprofit {
     font-weight: var(--bold-font);
-    color: var(--primaryColor);
+    color: #fff;
   }
 
   .footer ul li .olivegeeks {
     font-weight: var(--bold-font);
-    color: var(--secondaryColor);
+    color: #fff;
   }
 
 /* ==========================================================================
