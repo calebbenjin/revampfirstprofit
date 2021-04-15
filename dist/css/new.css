@@ -420,14 +420,6 @@ section {
     
    }
 
-   /* Header End */
-
-
-   /* Main Body */
-   main {
-     /* padding: 2rem 0; */
-   }
-
 
    .showcase {
      height: 100vh;
@@ -439,17 +431,22 @@ section {
    }
    .showcase .container{
      height: 100%;
-     padding: 4rem 0;
+     padding: 5rem 0;
      position: relative;
      display: flex;
      align-items: center;
      justify-content: center;
+     text-align: center;
    }
 
    .showcase .showcase__content {
     width: 90%;
     color: #fbfbfb;
-    text-align: left;
+    text-align: center;
+   }
+
+   .showcase .showcase__content h5 {
+     /* display: none; */
    }
    
    .showcase__content .showcase__title {
