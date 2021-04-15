@@ -1150,7 +1150,7 @@ section {
 
   .contact__section {
     background-image: linear-gradient(to top,rgb(0, 38, 63), #ffffff00), url(../img/footerimg1.jpg);
-    background-position: left;
+    background-position: center;
     background-size: cover;
   }
 
