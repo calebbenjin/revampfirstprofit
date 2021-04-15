@@ -363,6 +363,7 @@ section {
        left: 0;
        top: 0;
        height: 100%;
+       color: var(--secondaryColor);
        z-index: 99;
        transform: translateX(-100%);
        transition: var(--transition);
@@ -386,10 +387,18 @@ section {
 
      header nav ul {
       display: block;
-      margin-top: 3rem;
+      margin-top: 6rem;
+      text-align: center;
     }
     header nav ul li {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    header nav ul li a {
+      color: var(--secondaryColor);
+      margin-left: 0;
+      font-weight: 900;
+      font-size: 1.2rem;
     }
     
     .mobile-toggle {
@@ -401,7 +410,7 @@ section {
     .mobile-toggle .line {
       width: 30px;
       height: 3px;
-      background: var(--secondaryColor);
+      background: #fff;
       margin-bottom: 4px;
     }
     .mobile-toggle ion-icon {
@@ -842,12 +851,37 @@ section {
     box-shadow: var(--dark-shadow);
     text-align: center;
     background: var(--secondaryColor);
-    border-top-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-    padding: 3rem 20px;
+    border-radius: 4px;
     color: #fff;
     margin-bottom: 1rem;
     transition: var(--transition);
+    padding-bottom: 1rem;
+  }
+
+  .plans__card .card__body {
+    padding: 20px 2rem;
+  }
+
+  .plans__card .card__body .text {
+    text-align: left;
+    text-transform: capitalize;
+    margin: 3rem 0;
+  }
+  .plans__card .card__body .text h6 {
+    margin-bottom: 1rem;
+    box-shadow: var(--dark-shadow);
+    padding: 10px;
+    background:rgb(8, 77, 122);
+    border-radius: 4px;
+
+  }
+  .plans__card .card__body .text span {
+    text-transform: uppercase;
+  }
+
+  .card__head {
+    background: var(--primaryColor);
+    padding: 10px;
   }
 
   .plans__card:hover {
@@ -856,7 +890,7 @@ section {
 
   .plans__card .title {
     font-weight: var(--bold-font);
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .plans__card .title small {
     font-size: 1rem;
@@ -879,15 +913,6 @@ section {
     font-size: 5rem;
     margin-top: -1.3rem;
     color: #fff;
-  }
-
-  .plans__card .monthly {
-    margin: 2rem 0;
-    background: rgba(5, 69, 112, 0.911);
-    box-shadow: var(--dark-shadow);
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: 900;
   }
   .plans__card h5 {
     margin-bottom: 2rem;
