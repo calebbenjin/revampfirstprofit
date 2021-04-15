@@ -516,9 +516,8 @@ section {
   }
 
    .about__section {
-     padding: 8rem 0;
+     padding: 3rem 0;
      height: 100%;
-     /* background: #fff; */
    }
    .about__section .content p {
     margin-bottom: 2rem;
@@ -538,7 +537,7 @@ section {
      position: relative;
    }
    .about__section .about__img .main__img {
-     border-radius: 55px;
+     border-radius: 4px;
      /* box-shadow: var(--light-shadow); */
    }
    .about__section .about__img .logo {
@@ -1260,6 +1259,24 @@ section {
   .footer ul li .olivegeeks {
     font-weight: var(--bold-font);
     color: #fff;
+  }
+
+  @media(max-width: 768px) {
+    .contact__section .address ul li {
+      color: var(--secondaryColor);
+    }
+
+    .contact__form form input, textarea {
+      background: rgba(255, 255, 255, 0.739);
+    }
+
+    form input::placeholder {
+      color: #333;
+    }
+
+    .contact__form {
+      background: rgba(5, 69, 112, 0.568);
+    }
   }
 
 /* ==========================================================================
