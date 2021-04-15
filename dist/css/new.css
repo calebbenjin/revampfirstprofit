@@ -506,12 +506,18 @@ section {
       color: #fff;
     }
     .showcase {
-      height: 70vh;
+      height: 100vh;
       background-image: linear-gradient(to left,rgba(0, 38, 63, 0.733), #00263F), url(../img/heroimg2.gif);
       background-position: center;
       background-size: cover;
       color: #fff;
       text-align: center;
+    }
+
+    .showcase .core-btn-lg {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.1rem;
     }
   }
 
