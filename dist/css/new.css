@@ -1297,7 +1297,7 @@ section {
 
   @media(max-width: 768px) {
     .contact__section .address ul li {
-      color: var(--secondaryColor);
+      color: #fff;
     }
 
     .contact__form form input, textarea {
